@@ -874,7 +874,7 @@ class GameSender extends PluginTask {
         		$randx = mt_rand($chx - $radius, $chx + $radius);
         		$randy = mt_rand($chy - $radius, $chy + $radius);
         		$randz = mt_rand($chz - $radius, $chz + $radius);
-       				if($randy < 128){
+       				if($randy < 128)
        				$server = Server::getInstance();
        				$pos = new Vector3($randx, $randy, $randz);
        				$tile = $level->getTile($pos);
